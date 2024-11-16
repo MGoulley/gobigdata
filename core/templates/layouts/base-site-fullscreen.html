@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="LBDB">
+    <meta name="author" content="MGO">
+    <meta name="keyword" content="LBDB">
+
+    <title>
+        LBDB - {% block title %}{% endblock %}
+    </title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Icons-->
+    <link href="/static/assets/vendors/@coreui/icons/css/free.min.css" rel="stylesheet">
+    <link href="/static/assets/vendors/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+
+    <!-- Main styles for this application-->
+    <link href="/static/assets/css/style.css" rel="stylesheet">
+    <link href="/static/assets/vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+
+    <!-- Specific Page CSS goes HERE  -->
+    {% block stylesheets %}{% endblock stylesheets %}
+
+  </head>
+  <body class="c-app">
+
+    <div class="c-body">
+      <main class="c-main">
+        {% block content %}{% endblock content %}
+      </main>
+    </div>
+    {% block footer %}{% endblock footer %}
+
+    {% include 'includes/scripts.html' %}
+
+    <!-- Specific Page JS goes HERE  -->
+    {% block javascripts %}{% endblock javascripts %}
+
+  </body>
+</html>
